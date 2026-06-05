@@ -24,7 +24,7 @@ const C = {
 
 const questions = [
   {
-    text: "When you think about the life you want —",
+    text: "When you think about the life you want?",
     options: [
       { text: "I feel overwhelmed before I even begin", result: 'capacity' },
       { text: "I feel motivated sometimes, but it never quite sticks", result: 'cycles' },
@@ -33,7 +33,7 @@ const questions = [
     ]
   },
   {
-    text: "When you get close to doing the thing that matters to you —",
+    text: "When you get close to doing the thing that matters to you?",
     options: [
       { text: "The weight of it all lands at once and I don't know where to begin", result: 'capacity' },
       { text: "I begin with intention, but slowly fall back into old patterns", result: 'cycles' },
@@ -42,7 +42,7 @@ const questions = [
     ]
   },
   {
-    text: "When you imagine yourself actually living differently —",
+    text: "When you imagine yourself actually living differently?",
     options: [
       { text: "It feels like more than I know how to hold right now", result: 'capacity' },
       { text: "I worry I'll start, only to end up back where I began", result: 'cycles' },
@@ -51,7 +51,7 @@ const questions = [
     ]
   },
   {
-    text: "If you're honest about what keeps bringing you back to this question —",
+    text: "If you're honest about what keeps you from moving forward?",
     options: [
       { text: "I get in my own way right when things start to feel possible", result: 'capacity' },
       { text: "Things work for a while, and then I slowly drift back to where I started", result: 'cycles' },
