@@ -51,7 +51,7 @@ const questions = [
     ]
   },
   {
-    text: "If you're honest about what keeps you from moving forward?",
+    text: "What keeps you from moving forward?",
     options: [
       { text: "I get in my own way right when things start to feel possible", result: 'capacity' },
       { text: "Things work for a while, and then I slowly drift back to where I started", result: 'cycles' },
@@ -60,7 +60,7 @@ const questions = [
     ]
   },
   {
-    text: "What you're really looking for isn't just motivation or a better plan. It's —",
+    text: "What you're really looking for isn't just motivation or a better plan. It's…",
     options: [
       { text: "To feel like the gap between where I am and where I want to be is actually crossable", result: 'capacity' },
       { text: "To stop starting over and actually keep going", result: 'cycles' },
