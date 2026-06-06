@@ -182,10 +182,15 @@ export default function HomegrownQuiz() {
   const handleNext = () => {
     if (!selected) return;
     if (currentQ < questions.length - 1) {
+      // GA: quiz started on first question
+      if (currentQ === 0 && window.gtag) window.gtag('event', 'quiz_started');
       go(1);
     } else {
-      setResult(calculateResult(answers));
+      const finalResult = calculateResult(answers);
+      setResult(finalResult);
       setScreen('result');
+      // GA: quiz completed
+      if (window.gtag) window.gtag('event', 'quiz_completed', { result_type: finalResult });
     }
   };
 
@@ -211,8 +216,10 @@ export default function HomegrownQuiz() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, result }),
       });
+      // GA: email submitted
+      if (window.gtag) window.gtag('event', 'quiz_email_submitted', { result_type: result });
     } catch (e) {
-      // Silently continue — show success regardless
+      // Silently continue
     }
     setEmailSent(true);
   };
