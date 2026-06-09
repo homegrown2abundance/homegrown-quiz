@@ -228,7 +228,7 @@ export default function HomegrownQuiz() {
     <div style={{
       minHeight: '100vh', background: C.bg,
       display: 'flex', justifyContent: 'center', alignItems: 'flex-start',
-      padding: '20px 16px 80px', fontFamily: "'Poppins', sans-serif",
+      padding: '20px 16px 40px', fontFamily: "'Poppins', sans-serif",
     }}>
       <div style={{ width: '100%', maxWidth: 500, paddingTop: pt }}>
         {children}
@@ -236,8 +236,20 @@ export default function HomegrownQuiz() {
     </div>
   );
 
+  const wrapCenter = (children) => (
+    <div style={{
+      minHeight: '100vh', background: C.bg,
+      display: 'flex', justifyContent: 'center', alignItems: 'center',
+      padding: '20px 16px', fontFamily: "'Poppins', sans-serif",
+    }}>
+      <div style={{ width: '100%', maxWidth: 500 }}>
+        {children}
+      </div>
+    </div>
+  );
+
   // ── INTRO ──────────────────────────────────────────────────────────────────
-  if (screen === 'intro') return wrap(
+  if (screen === 'intro') return wrapCenter(
     <div className="fade-in" style={{ textAlign: 'center' }}>
       <p style={{ fontSize: 10, letterSpacing: '0.22em', color: C.terracotta, textTransform: 'uppercase', marginBottom: 28 }}>
         Homegrown Abundance
@@ -271,7 +283,7 @@ export default function HomegrownQuiz() {
         textTransform: 'uppercase', cursor: 'pointer',
       }}>Begin</button>
     </div>
-  , 44);
+  );
 
   // ── QUIZ ───────────────────────────────────────────────────────────────────
   if (screen === 'quiz') return wrap(
