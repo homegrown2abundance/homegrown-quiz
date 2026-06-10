@@ -255,21 +255,18 @@ export default function HomegrownQuiz() {
         Homegrown Abundance
       </p>
 
-      <h1 style={{ fontFamily: "'Marcellus', serif", fontSize: 26, color: C.dark, lineHeight: 1.4, marginBottom: 28, padding: '0 4px' }}>
-        What's Standing Between You<br/>and the Life You're Building?
+      <h1 style={{ fontFamily: "'Marcellus', serif", fontSize: 26, color: C.dark, lineHeight: 1.4, marginBottom: 20, padding: '0 4px' }}>
+        What's Standing Between You<br/>and the Life You Want?
       </h1>
 
       <Divider />
 
-      <p style={{ fontFamily: "'Noto Serif Display', serif", fontStyle: 'italic', fontSize: 16, color: C.body, lineHeight: 1.85, marginBottom: 4 }}>
-        There's a version of your life you can feel
-      </p>
-      <p style={{ fontFamily: "'Noto Serif Display', serif", fontStyle: 'italic', fontSize: 16, color: C.body, lineHeight: 1.85, marginBottom: 28 }}>
-        but can't quite reach yet.
+      <p style={{ fontFamily: "'Noto Serif Display', serif", fontStyle: 'italic', fontSize: 16, color: C.body, lineHeight: 1.85, marginBottom: 16 }}>
+        The answer may not be what you think.
       </p>
 
       <p style={{ fontSize: 13, color: C.mushroom, lineHeight: 1.7, marginBottom: 32 }}>
-        This quiz will help you understand what hasn't shifted yet.
+        Discover the specific pattern that's been keeping your days the same.
       </p>
 
       <p style={{ fontSize: 10, color: C.mushroom, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 32 }}>
