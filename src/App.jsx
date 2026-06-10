@@ -266,7 +266,7 @@ export default function HomegrownQuiz() {
       </p>
 
       <p style={{ fontSize: 13, color: C.mushroom, lineHeight: 1.7, marginBottom: 32 }}>
-        Discover the specific pattern that's been keeping your days the same.
+        Discover the pattern that's been keeping your days the same.
       </p>
 
       <p style={{ fontSize: 10, color: C.mushroom, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 32 }}>
