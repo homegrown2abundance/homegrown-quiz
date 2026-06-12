@@ -262,7 +262,7 @@ export default function HomegrownQuiz() {
       <Divider />
 
       <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 16 }}>
-        There's a version of you that already knows how to live differently.<br/>
+        There's a version of you that knows how to live differently.<br/>
         But something keeps pulling you back to the same place.
       </p>
 
