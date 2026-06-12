@@ -261,12 +261,17 @@ export default function HomegrownQuiz() {
 
       <Divider />
 
+      <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 16 }}>
+        There's a version of you that already knows how to live differently.<br/>
+        But something keeps pulling you back to the same place.
+      </p>
+
       <p style={{ fontFamily: "'Noto Serif Display', serif", fontStyle: 'italic', fontSize: 16, color: C.body, lineHeight: 1.85, marginBottom: 16 }}>
-        The answer may not be what you think.
+        The reason isn't what most people think.
       </p>
 
       <p style={{ fontSize: 13, color: C.mushroom, lineHeight: 1.7, marginBottom: 32 }}>
-        Discover the pattern that's been keeping your days the same.
+        Discover the pattern that's been shaping your days.
       </p>
 
       <p style={{ fontSize: 10, color: C.mushroom, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 32 }}>
