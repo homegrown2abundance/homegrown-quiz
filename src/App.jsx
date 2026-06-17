@@ -153,6 +153,7 @@ export default function HomegrownQuiz() {
   const [email, setEmail]               = useState('');
   const [emailSent, setEmailSent]       = useState(false);
   const [emailErr, setEmailErr]         = useState(false);
+  const [submitting, setSubmitting]     = useState(false);
 
   useEffect(() => {
     const el = document.createElement('style');
@@ -209,18 +210,20 @@ export default function HomegrownQuiz() {
 
   const submitEmail = async () => {
     if (!email || !email.includes('@')) { setEmailErr(true); return; }
+    if (submitting) return;
     setEmailErr(false);
+    setSubmitting(true);
     try {
       await fetch('/.netlify/functions/submit-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, result }),
       });
-      // GA: email submitted
       if (window.gtag) window.gtag('event', 'quiz_email_submitted', { result_type: result });
     } catch (e) {
       // Silently continue
     }
+    setSubmitting(false);
     setEmailSent(true);
   };
 
@@ -425,8 +428,9 @@ export default function HomegrownQuiz() {
             width: '100%', background: 'transparent', color: C.terracotta,
             border: `1px solid ${C.terracotta}`, borderRadius: 2, padding: '13px',
             fontFamily: "'Poppins', sans-serif", fontSize: 12, letterSpacing: '0.1em',
-            textTransform: 'uppercase', cursor: 'pointer',
-          }}>Send it to me</button>
+            textTransform: 'uppercase', cursor: submitting ? 'default' : 'pointer',
+            opacity: submitting ? 0.6 : 1,
+          }}>{ submitting ? 'Sending...' : 'Send it to me' }</button>
         </div>
       ) : (
         <div style={{ marginBottom: 28, textAlign: 'center' }}>
