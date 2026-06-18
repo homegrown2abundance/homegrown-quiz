@@ -413,7 +413,8 @@ export default function HomegrownQuiz() {
       {!emailSent ? (
         <div style={{ marginBottom: 28 }}>
           <p style={{ fontSize: 14, color: C.body, lineHeight: 1.75, marginBottom: 16, fontStyle: 'italic', fontWeight: 300 }}>
-            Your free copy of The Steady Way Forward is ready. Enter your email and I'll send it along with your result.
+            Your free copy of The Steady Way Forward is ready.<br/>
+            Enter your email and I'll send it along with your result.
           </p>
           <input
             type="email"
