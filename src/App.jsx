@@ -277,8 +277,13 @@ export default function HomegrownQuiz() {
         Discover the pattern that's been shaping your days.
       </p>
 
-      <p style={{ fontSize: 10, color: C.mushroom, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 32 }}>
+      <p style={{ fontSize: 10, color: C.mushroom, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 20 }}>
         5 questions &nbsp;·&nbsp; 3 minutes
+      </p>
+
+      <p style={{ fontSize: 13, color: C.body, lineHeight: 1.7, marginBottom: 28, fontStyle: 'italic' }}>
+        Complete the quiz and receive your free copy of<br/>
+        <em style={{ color: C.terracotta }}>The Steady Way Forward.</em>
       </p>
 
       <button onClick={() => setScreen('quiz')} style={{
@@ -408,7 +413,7 @@ export default function HomegrownQuiz() {
       {!emailSent ? (
         <div style={{ marginBottom: 28 }}>
           <p style={{ fontSize: 14, color: C.body, lineHeight: 1.75, marginBottom: 16, fontStyle: 'italic', fontWeight: 300 }}>
-            Want me to send this to you, along with a short note on where to go from here?
+            Your free copy of The Steady Way Forward is ready. Enter your email and I'll send it along with your result.
           </p>
           <input
             type="email"
