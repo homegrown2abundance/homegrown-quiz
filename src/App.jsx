@@ -452,7 +452,7 @@ export default function HomegrownQuiz() {
         <p style={{ fontSize: 13, color: C.body, marginBottom: 16, fontStyle: 'italic', fontWeight: 300 }}>
           Ready to move through it now?
         </p>
-        <a href="https://homegrownabundance.com" target="_blank" rel="noopener noreferrer" style={{
+        <a href="https://reset.homegrownabundance.com" target="_blank" rel="noopener noreferrer" style={{
           display: 'block', background: C.terracotta, color: C.white, textDecoration: 'none',
           borderRadius: 2, padding: '14px',
           fontFamily: "'Poppins', sans-serif", fontSize: 12, letterSpacing: '0.12em',
